@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Backlog",
+    "order": 0,
+    "cards": []
+  },
+  {
+    "title": "Ready",
+    "order": 1,
+    "cards": []
+  },
+  {
+    "title": "In Progress",
+    "order": 2,
+    "cards": []
+  },
+  {
+    "title": "Finished",
+    "order": 3,
+    "cards": []
+  }
+]

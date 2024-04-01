@@ -1,0 +1,15 @@
+.mainContent{
+    display: flex;
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: start;
+}
+
+@media screen and (max-width: 768px){
+    .mainContent{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+

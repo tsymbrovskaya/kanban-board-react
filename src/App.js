@@ -1,25 +1,39 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.module.css';
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Main from "./components/main/Main";
+import data from "./mock.json";
+import {useState} from "react";
+import config from "./config.json"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+     // localStorage.removeItem('panels')
+
+    if (localStorage.getItem('panels')){
+        data = JSON.parse(localStorage.getItem('panels'))
+    }
+
+    const[panels, setPanels]=useState(data)
+    const[refreshPanels, setRefreshPanels]=useState(false)
+
+    function toggleRefreshPanels(){
+        setRefreshPanels(!refreshPanels)
+    }
+
+    function setPanelsWithSave(newPanels){
+        setPanels(newPanels)
+        localStorage.setItem('panels', JSON.stringify(newPanels))
+    }
+
+    return (
+        <>
+            <Header/>
+            <Main panels={panels} toggleRefreshPanels={toggleRefreshPanels} setPanels={setPanelsWithSave}/>
+            <Footer panels={panels} config={config}/>
+        </>
+    );
 }
 
 export default App;

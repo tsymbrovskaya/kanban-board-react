@@ -1,0 +1,48 @@
+.button{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px ;
+    border: none;
+    font-size: 18px;
+    width: 102px;
+    background-color: transparent;
+
+}
+.buttonAdd{
+    color: rgba(94, 108, 132, 1);
+}
+.buttonAdd img{
+    margin-right: 4px;
+}
+.buttonAdd:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.buttonAdd:disabled {
+    background-color: transparent;
+    cursor: initial;
+}
+
+.buttonSubmit{
+    background-color: rgba(0, 121, 191, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.inputCard{
+    border: none;
+    font-size: 18px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.selectCard{
+    border: none;
+    font-size: 18px;
+
+}
+
+

@@ -1,0 +1,74 @@
+.header{
+    background-color: rgba(0, 103, 163, 1);
+}
+
+.headerContent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.appLogo{
+    font-family: "Roboto",sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 28px;
+}
+.userMenu{
+    padding: 8px 0 8px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    background-color: rgba(255, 255, 255 ,1);
+    border-radius: 5px;
+    min-width: 134px;
+    padding: 8px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.45);
+}
+
+.menuContainer{
+    position: absolute;
+    height: 0;
+    bottom:-12px;
+    right: 0;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style-type: none;
+
+}
+
+.menu a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.tail{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255 ,1);
+    position: absolute;
+    right: 40px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+
+.arrowRotate{
+    transform: rotate(180deg);
+}
+
+.menu ul li:nth-child(n+2){
+    padding-top: 6px;
+}

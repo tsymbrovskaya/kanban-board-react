@@ -1,0 +1,28 @@
+.footer{
+    background-color: rgba(0, 103, 163, 1);
+}
+
+.footerContent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footerInfo{
+    font-family: "Roboto", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.footer a{
+    color:rgba(255, 255, 255, 1);
+    text-decoration: none;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
